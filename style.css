@@ -1,13 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:wght@300;400;500&display=swap");
+
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #eee;
 }
 body{
     display: grid;
     grid-template-columns: 25% 75%;
     height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 aside{
     background-color: red;
@@ -20,5 +24,140 @@ main{
 main > header {
     width: 100%;
     height: 40%;
-    background-color: violet;
+    background-color: var(--background);
+}
+
+:root{
+    /* Hex	 */
+    --main-green: #1db954;
+    --background: #212121;	
+    --border :#121212;
+    --light-background:#535353;
+    --grey:#b3b3b3;
+    --font-color: #f1f1f1;
+}
+
+/* ==================== Headder CSS ===================== */
+
+header{
+    background: linear-gradient(to bottom , rgb(67, 2, 67) , var(--background));
+    color: var(--font-color);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+header .top-nav{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    position: sticky;
+    top: 0px;
+}
+
+header .top-nav .arrows span{
+    font-size: 25px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,.3);
+    color: rgba(255,255,255,.7)
+}
+
+header .top-nav .arrows .icon-left{
+    margin-right: 10px;
+}
+
+header .top-nav .install-app{
+    background-color: rgba(0,0,0,.3);
+    padding: 7px 10px;
+    border-radius: 35px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+header .top-nav .install-app i{
+    margin-right: 7px;
+}
+
+header .top-nav .user-profile{
+    background-color: rgba(0,0,0,.3);
+    padding: 7px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    margin-left: 7px;
+}
+
+header .heading h1{
+    padding: .2rem 1rem .6rem 1rem;
+}
+
+header .playlist-container{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);;
+}
+
+header .playlist-container .playlist{
+    background-color: rgba(255,255,255,.07);
+    display: flex;
+    margin: 0 1rem 10px 1rem;
+    border-radius: 4px;
+    overflow: hidden;
+    text-align: center;
+    align-items: center;
+    transition: all .2s;
+    position: relative;
+}
+
+header .playlist-container .playlist img{
+    height: 100%;
+    width: 85px;
+}
+
+header .playlist-container h4{
+    margin-left: 1rem;
+}
+
+header .playlist-container .playlist .play-icon{
+    position: absolute;
+    right: 1.1rem;
+    align-items: center;
+    border-radius: 50%;
+    background-color: rgb(9, 213, 84);
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    color:black;
+    visibility: hidden;
+    box-shadow: 0 4px 10px 4px rgba(0,0,0,.3);
+}
+
+header .playlist-container .playlist .play-icon i{
+    font-size: 30px;
+    justify-self: center;
+
+}
+
+/* hover */
+header .nav-info span:hover{
+    transform: scale(1.02);
+    cursor: pointer;
+}
+header .playlist-container .playlist:hover{
+    background-color: rgba(255,255,255,.12);
+}
+header .playlist-container .playlist .play-icon:hover{
+    filter: brightness(1.04);
+    transform: scale(1.01);
+}
+header .playlist-container .playlist:hover>.play-icon{
+    visibility: visible;
 }
