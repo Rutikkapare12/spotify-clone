@@ -1,48 +1,182 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:wght@300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:wght@300;400;500&display=swap");
 /* font-family: 'Poppins', sans-serif;
 font-family: 'Roboto', sans-serif; */
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #eee;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-:root{
-    /* Hex	 */
-    --main-green: #1db954;
-    --background: #212121;	
-    --border: #121212;
-    --light-background: #535353;
-    --grey: #b3b3b3;
+:root {
+  /* Hex	 */
+  --main-green: #1db954;
+  --background: #212121;
+  --border: #121212;
+  --light-background: #535353;
+  --grey: #b3b3b3;
+  --font-color: #f1f1f1;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  height: 5px;
+  cursor: pointer;
 }
 
-body{
-    display: grid;
-    grid-template-columns: 25% 75%;
-    gap: 10px;
-    height: 100vh;
-    background: var(--border);
+::-webkit-scrollbar-thumb {
+  background-color: rgb(114, 113, 113);
+  border-radius: 10px;
+  height: 200px;
 }
-aside{
-    background-color: var(--background);
-    grid-row-start: 1;
-    grid-row-end: 3;
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
 }
-main{
-    background-color: var(--border);
-    display: grid;
-    grid-template-rows: 40% 60%;
-    gap: 10px;
-    height: 100vh;
+
+body {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  gap: 10px;
+  height: 100vh;
+  background: var(--border);
+  font-family: "Poppins", sans-serif;
+}
+/* -------------------------------------------------------------------------- */
+/*                                Aside section                               */
+/* -------------------------------------------------------------------------- */
+aside {
+  position: sticky;
+  background-color: var(--border);
+  grid-row-start: 1;
+  grid-row-end: 3;
+  gap: 10px;
+}
+aside nav {
+  margin-block: 10px;
+  margin-left: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--background);
+}
+aside nav div {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: var(--font-color);
+  cursor: pointer;
+}
+aside nav div i {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+aside nav div h2 {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+aside nav div:hover {
+  opacity: 0.8;
+}
+/* ------------------------- aside section container ------------------------ */
+aside .list {
+  background: var(--background);
+  margin-left: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  color: var(--font-color);
+}
+aside .list .list__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+aside .list .list__top .list__top__left {
+  display: flex;
+  align-items: center;
+}
+aside .list .list__top .list__top__left > i {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+aside .list .list__top .list__top__left > h2 {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+aside .list .list__top .list__top__right > i {
+  font-size: 1.5rem;
+}
+aside .list .list__top .list__top__right > i:first-child {
+  margin-right: 5px;
+}
+aside .list .category-btn {
+  display: flex;
+  justify-content: space-around;
+  margin-inline: 5px;
+  margin-bottom: 10px;
+}
+aside .list .category-btn button {
+  padding: 8px 10px;
+  border-radius: 20px;
+  background: var(--light-background);
+  color: var(--font-color);
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: none;
+  outline: none;
+}
+aside .list .recent-btn {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+aside .list .recent-btn i {
+  font-size: 1.3rem;
+}
+aside .list .recent-btn button {
+  font-size: 1rem;
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--font-color);
+}
+aside .list .music__lists {
+  display: grid;
+  gap: 10px;
+  height: 65vh;
+  overflow: auto;
+}
+aside .list .music__box {
+  margin-inline: 10px;
+  display: flex;
+  gap: 10px;
+}
+aside .list .music__box div > img {
+  height: 3.3rem;
+  border-radius: 10px;
+}
+aside .list .music__box div > .author_title {
+  font-weight: 500;
+}
+aside .list .music__box div > .author_sub_title {
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+
+main {
+  background-color: var(--border);
+  display: grid;
+  grid-template-rows: 40% 60%;
+  gap: 10px;
+  height: 100vh;
 }
 main > header {
-    width: 100%;
-    height: 100%;
-    background-color: violet;
+  width: 100%;
+  height: 100%;
+  background-color: violet;
 }
 main > section {
-    width: 100%;
-    background-color: aqua;
+  width: 100%;
+  background-color: aqua;
 }
