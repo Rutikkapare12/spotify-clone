@@ -11,6 +11,7 @@ font-family: 'Roboto', sans-serif; */
 :root {
   /* Hex	 */
   --main-green: #1db954;
+  --main-green: rgb(9, 213, 84);
   --background: #212121;
   --border: #121212;
   --light-background: #535353;
@@ -19,7 +20,7 @@ font-family: 'Roboto', sans-serif; */
 }
 ::-webkit-scrollbar {
   width: 0px;
-  height: 5px;
+  height: 2px;
   cursor: pointer;
 }
 
@@ -41,6 +42,10 @@ body {
   background: var(--border);
   font-family: "Poppins", sans-serif;
 }
+
+i {
+  cursor: pointer;
+}
 /* -------------------------------------------------------------------------- */
 /*                                Aside section                               */
 /* -------------------------------------------------------------------------- */
@@ -50,6 +55,7 @@ aside {
   grid-row-start: 1;
   grid-row-end: 3;
   gap: 10px;
+  width: 100%;
 }
 aside nav {
   margin-block: 10px;
@@ -67,8 +73,8 @@ aside nav div {
   cursor: pointer;
 }
 aside nav div i {
-  font-size: 1.5rem;
-  margin-right: 10px;
+  font-size: 1.8rem;
+  margin-right: 17px;
 }
 aside nav div h2 {
   font-size: 1.1rem;
@@ -91,14 +97,15 @@ aside .list .list__top {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
+  margin-bottom: 5px;
 }
 aside .list .list__top .list__top__left {
   display: flex;
   align-items: center;
 }
 aside .list .list__top .list__top__left > i {
-  font-size: 1.5rem;
-  margin-right: 10px;
+  font-size: 1.8rem;
+  margin-right: 17px;
 }
 aside .list .list__top .list__top__left > h2 {
   font-size: 1.1rem;
@@ -115,6 +122,7 @@ aside .list .category-btn {
   justify-content: space-around;
   margin-inline: 5px;
   margin-bottom: 10px;
+  width: 100%;
 }
 aside .list .category-btn button {
   padding: 8px 10px;
@@ -125,6 +133,9 @@ aside .list .category-btn button {
   font-weight: 500;
   border: none;
   outline: none;
+  min-width: fit-content;
+  min-height: fit-content;
+  margin-right: 10px;
 }
 aside .list .recent-btn {
   display: flex;
@@ -150,10 +161,11 @@ aside .list .music__lists {
 aside .list .music__box {
   margin-inline: 10px;
   display: flex;
-  gap: 10px;
+  gap: 17px;
 }
 aside .list .music__box div > img {
   height: 3.3rem;
+  width: 3.3rem;
   border-radius: 10px;
 }
 aside .list .music__box div > .author_title {
@@ -165,16 +177,15 @@ aside .list .music__box div > .author_sub_title {
 }
 
 main {
+  position: sticky;
   background-color: var(--border);
-  display: grid;
-  grid-template-rows: 40% 60%;
   gap: 10px;
   height: 100vh;
   overflow: auto;
 }
 main > header {
   width: 100%;
-  height: 100%;
+  height: auto;
   background-color: violet;
 }
 
@@ -187,6 +198,7 @@ header {
   border-top-right-radius: 10px;
   margin-top: 10px;
   border-radius: 10px;
+  padding-block: 10px;
 }
 
 header .top-nav {
@@ -197,6 +209,9 @@ header .top-nav {
   background-color: transparent;
   position: sticky;
   top: 0px;
+  z-index: 100;
+  background: transparent;
+  backdrop-filter: blur(5px);
 }
 
 header .top-nav .arrows span {
@@ -244,13 +259,14 @@ header .heading h1 {
 
 header .playlist-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+  margin-inline: 10px;
 }
 
 header .playlist-container .playlist {
   background-color: rgba(255, 255, 255, 0.07);
   display: flex;
-  margin: 0 1rem 10px 1rem;
   border-radius: 4px;
   overflow: hidden;
   text-align: center;
@@ -273,7 +289,7 @@ header .playlist-container .playlist .play-icon {
   right: 1.1rem;
   align-items: center;
   border-radius: 50%;
-  background-color: rgb(9, 213, 84);
+  background-color: var(--main-green);
   height: 50px;
   width: 50px;
   display: flex;
@@ -311,7 +327,6 @@ header .playlist-container .playlist:hover > .play-icon {
 /* section box */
 .container {
   background-color: var(--background);
-  height: 100vh;
   border-radius: 10px;
   margin-top: 10px;
 }
@@ -330,11 +345,13 @@ header .playlist-container .playlist:hover > .play-icon {
 }
 
 .grid {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
   justify-content: space-around;
   margin-inline: 20px;
   gap: 16px;
+  height: 260px;
+  overflow: hidden;
 }
 
 .show-more {
@@ -355,7 +372,6 @@ header .playlist-container .playlist:hover > .play-icon {
   justify-content: center;
   align-items: center;
   background: transparent;
-  width: 12rem;
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.03);
   border-radius: 10px;
@@ -372,6 +388,7 @@ header .playlist-container .playlist:hover > .play-icon {
   object-fit: cover;
   padding: 10px;
   border-radius: 20px;
+  background-color: none;
 }
 
 .box-title {
@@ -407,4 +424,116 @@ header .playlist-container .playlist:hover > .play-icon {
 .box-item:hover > .play-icon {
   visibility: visible;
   cursor: pointer;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                         responsive required classes                        */
+/* -------------------------------------------------------------------------- */
+.collapse {
+  display: none !important;
+}
+.minimize-body {
+  grid-template-columns: 5.22% auto;
+}
+.musiclists__height {
+  max-height: 76%;
+}
+.collapsible {
+  height: auto;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                           Media Queries for 600px                          */
+/* -------------------------------------------------------------------------- */
+@media screen and (max-width: 600px) {
+  aside {
+    display: none;
+  }
+  body {
+    grid-template-columns: 1fr;
+  }
+  main {
+    padding-inline: 10px;
+  }
+  header .playlist-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  header .playlist-container .playlist img {
+    height: 100%;
+    width: 60px;
+  }
+
+  header .playlist-container h4 {
+    font-size: 0.9rem;
+    margin-left: 0.6rem;
+    text-align: start;
+  }
+
+
+  header .playlist-container .playlist .play-icon {
+    position: absolute;
+    left: 2.1rem;
+    top: 2.1rem;
+    height: 25px;
+    width: 25px;
+  }
+  
+  header .playlist-container .playlist .play-icon i {
+    font-size: 16px;
+  }
+
+  .box-heading {
+    margin-bottom: 10px;
+    padding-inline: 10px;
+  }
+
+  .box-heading h2 {
+    margin: 10px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+    grid-auto-flow: column;
+    justify-content: space-between;
+    margin-inline: 20px;
+    gap: 5px;
+    height: auto;
+    overflow: auto;
+  }
+
+  .grid .box-container {
+    border-radius: 5px;
+    width: 10rem;
+    position: relative;
+  }
+
+  .box-item img {
+    height: 150px;
+    width: 100%;
+    padding: 0;
+    border-radius: 2px;
+    object-fit: cover;
+  }
+
+  .container .box-container .play-icon {
+    top: 7rem;
+    height: 45px;
+    width: 45px;
+  }
+
+  .container .box-container .play-icon i {
+    font-size: 20px;
+  }
+
+  .show-more {
+    display: none;
+  }
+}
+/* -------------------------------------------------------------------------- */
+/*                           Media Queries for 900px                          */
+/* -------------------------------------------------------------------------- */
+@media screen and (max-width: 900px) {
 }
