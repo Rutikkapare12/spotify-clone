@@ -21,23 +21,20 @@ font-family: 'Roboto', sans-serif; */
 
 header{
     border-radius: 0;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
 }
-
-header .top-nav .arrows{
+ .top-nav .arrows{
     display: flex;
     align-items: center;
 }
 
-header .top-nav .arrows .nav-playlist-title{
+ .top-nav .arrows .nav-playlist-title{
     display: flex;
     align-items: center;
 
     /* display: none; */
 }
 
-header .top-nav .arrows .nav-playlist-title .play-icon-top{
+ .top-nav .arrows .nav-playlist-title .play-icon-top{
   align-items: center;
   border-radius: 50%;
   background-color: var(--main-green);
@@ -51,44 +48,44 @@ header .top-nav .arrows .nav-playlist-title .play-icon-top{
 }
 
 
-header .top-nav .arrows .arrow-active{
+ .top-nav .arrows .arrow-active{
     background-color: rgba(0,0,0,.45);
 }
 
-header .top-playlist-container{
+ .top-playlist-container{
     display: flex;
     align-items:flex-end;
     padding: 1rem;
 }
 
-header .top-playlist-container .top-img-con img{
+ .top-playlist-container .top-img-con img{
     height: 220px;
     width: 220px;
-    box-shadow: 0 2px 30px 32px rgba(0,0,0,.2)
+    box-shadow: 0 2px 10px 12px rgba(0,0,0,.2)
 }
 
-header .top-playlist-container .top-playlist-detail{
+ .top-playlist-container .top-playlist-detail{
     margin-left:20px;
 }
 
-header .top-playlist-container .top-playlist-detail h6,
-header .top-playlist-container .top-playlist-detail ul{
+ .top-playlist-container .top-playlist-detail h6,
+ .top-playlist-container .top-playlist-detail ul{
     font-size: 13px;
 }
 
-header .top-playlist-container .top-playlist-detail .playlist-title{
+ .top-playlist-container .top-playlist-detail .playlist-title{
     font-size: 45px;
     line-height: 81px;
     font-weight: 700;
 }
 
-header .top-playlist-container .top-playlist-detail li{
+ .top-playlist-container .top-playlist-detail li{
     font-size: 12px;
     margin-left:10px;
     display: inline;
 }
 
-header .top-playlist-container .top-playlist-detail .small-details{
+ .top-playlist-container .top-playlist-detail .small-details{
     display: flex;
     align-items: center;
 }
@@ -176,4 +173,65 @@ table{
     display: flex;
     align-items: center;
     
+}
+
+
+/* Media Query */
+
+@media screen and (max-width: 600px) {
+
+    
+    .top-nav .arrows .icon-right{
+        display: none;
+    }
+    .top-nav .install-app{
+        display: none;
+    }
+    .top-nav .nav-playlist-title h1{
+        font-size: 14px;
+    }
+    .top-playlist-detail h1 {
+        font-size: 1.3rem;
+        text-align: start;
+        font-weight: 600;
+    }
+
+    .top-playlist-container .top-playlist-detail .playlist-title {
+        font-size: 1.3rem;
+        line-height: 30px;
+        font-weight: 600;
+    }
+
+    header .top-playlist-container{
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .top-playlist-detail{
+        width: 100%;
+    }
+
+    table .tr-hide{
+        display: none;
+    }
+
+    table img{
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .tbl-song-data div{
+        overflow: hidden;
+    }
+
+    .songs-container .play-div .menu{
+        transform: rotate(90deg);
+    }
+
+    table tbody tr > td:last-child{
+        transform: rotate(90deg);
+        font-size: 1.2rem;
+    }
+
+
 }
