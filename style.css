@@ -198,7 +198,15 @@ header {
   padding-block: 10px;
 }
 
- .top-nav {
+.top-div-hidden{
+  height:10px; position:sticky; 
+  top:0px;
+  background-color: var(--border);
+  z-index: 99999;
+}
+
+
+.top-nav {
   color: var(--font-color);
   padding: 1rem;
   display: flex;
@@ -206,7 +214,7 @@ header {
   align-items: center;
   background-color: transparent;
   position: sticky;
-  top: -1px;
+  top: 10px;
   z-index: 100;
   background: rgb(67, 2, 67);
   backdrop-filter: blur(5px);
