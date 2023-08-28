@@ -10,8 +10,9 @@ font-family: 'Roboto', sans-serif; */
 
 :root {
   /* Hex	 */
-  --main-green: #1db954;
-  --main-green: rgb(9, 213, 84);
+  /* --main-green: #1db954; */
+  /* --main-green: rgb(9, 213, 84); */
+  --main-green: linear-gradient(to top left, #d10edb, #0061ff);
   --background: #212121;
   --border: #121212;
   --light-background: #535353;
@@ -35,6 +36,7 @@ font-family: 'Roboto', sans-serif; */
 }
 
 body {
+  overflow: hidden;
   display: grid;
   grid-template-columns: 25% 73.77%;
   gap: 10px;
@@ -321,7 +323,7 @@ header {
   right: 1.1rem;
   align-items: center;
   border-radius: 50%;
-  background-color: var(--main-green);
+  background: var(--main-green);
   height: 50px;
   width: 50px;
   display: flex;
@@ -440,7 +442,7 @@ header .playlist-container .playlist:hover > .play-icon {
   right: 1rem;
   height: 50px;
   width: 50px;
-  background-color: var(--main-green);
+  background: var(--main-green);
   border-radius: 50%;
   color: black;
   align-items: center;
