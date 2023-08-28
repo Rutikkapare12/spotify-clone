@@ -26,3 +26,18 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+
+
+// scrolling nav Effect
+const mainEl = document.getElementById("main-con");
+const topNavEl = document.getElementById("top-scroll");
+mainEl.addEventListener("scroll",()=>{
+  console.log(mainEl.scrollTop);
+    if(mainEl.scrollTop > 45){
+       topNavEl.style.background = "rgba(0,0,0,.15)";
+    }
+    else if(mainEl.scrollTop < 45)
+    {
+      topNavEl.style.background = "rgb(67, 2, 67)";
+    }
+})

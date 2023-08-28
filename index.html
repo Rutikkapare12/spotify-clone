@@ -1,429 +1,407 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>spotify clone</title>
 
-    <!-- ================= Remix Icons =============== -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>spotify clone</title>
 
-    <!-- UNICONS -->
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
-    />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <aside id="aside">
-      <nav>
-        <div>
-          <i class="ri-home-5-fill"></i>
-          <h2 class="collapse-removeble">Home</h2>
+  <!-- ================= Remix Icons =============== -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+  <!-- UNICONS -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <aside id="aside">
+    <nav>
+      <div>
+        <i class="ri-home-5-fill"></i>
+        <h2 class="collapse-removeble">Home</h2>
+      </div>
+      <div>
+        <i class="ri-search-line"></i>
+        <h2 class="collapse-removeble">Search</h2>
+      </div>
+    </nav>
+    <section class="list">
+      <div class="list__top">
+        <div class="list__top__left">
+          <i class="ri-layout-2-fill" id="collapse-btn"></i>
+          <h2 class="collapse-removeble">Your Library</h2>
         </div>
-        <div>
-          <i class="ri-search-line"></i>
-          <h2 class="collapse-removeble">Search</h2>
+        <div class="list__top__right collapse-removeble">
+          <i class="uil uil-plus"></i>
+          <i class="uil uil-arrow-right"></i>
         </div>
-      </nav>
-      <section class="list">
-        <div class="list__top">
-          <div class="list__top__left">
-            <i class="ri-layout-2-fill" id="collapse-btn"></i>
-            <h2 class="collapse-removeble">Your Library</h2>
+      </div>
+      <div class="category-btn collapse-removeble">
+        <button>Playlists</button>
+        <button>Podcasts & shows</button>
+        <button>Albums</button>
+        <button>Artists</button>
+      </div>
+      <div class="recent-btn collapse-removeble">
+        <i class="ri-search-line"></i>
+        <button>Recent <i class="uil uil-angle-down"></i></button>
+      </div>
+      <div class="music__lists">
+        <div class="music__box">
+          <div>
+            <img src="images/thumbnail1.jpeg" alt="" />
           </div>
-          <div class="list__top__right collapse-removeble">
-            <i class="uil uil-plus"></i>
-            <i class="uil uil-arrow-right"></i>
-          </div>
-        </div>
-        <div class="category-btn collapse-removeble">
-          <button>Playlists</button>
-          <button>Podcasts & shows</button>
-          <button>Albums</button>
-          <button>Artists</button>
-        </div>
-        <div class="recent-btn collapse-removeble">
-          <i class="ri-search-line"></i>
-          <button>Recent <i class="uil uil-angle-down"></i></button>
-        </div>
-        <div class="music__lists">
-          <div class="music__box">
-            <div>
-              <img src="images/thumbnail1.jpeg" alt="" />
-            </div>
-            <div class="collapse-removeble">
-              <p class="author_title">Taylor Swift</p>
-              <p class="author_sub_title">Artist.Singer</p>
-            </div>
-          </div>
-          <div class="music__box">
-            <div>
-              <img src="images/thumbnail2.jpg" alt="" />
-            </div>
-            <div class="collapse-removeble">
-              <p class="author_title">Taylor Swift</p>
-              <p class="author_sub_title">Artist.Singer</p>
-            </div>
-          </div>
-          <div class="music__box">
-            <div>
-              <img src="images/thumbnail3.jpeg" alt="" />
-            </div>
-            <div class="collapse-removeble">
-              <p class="author_title">Taylor Swift</p>
-              <p class="author_sub_title">Artist.Singer</p>
-            </div>
-          </div>
-          <div class="music__box">
-            <div>
-              <img src="images/thumbnail4.jpeg" alt="" />
-            </div>
-            <div class="collapse-removeble">
-              <p class="author_title">Taylor Swift</p>
-              <p class="author_sub_title">Artist.Singer</p>
-            </div>
-          </div>
-          <div class="music__box">
-            <div>
-              <img src="images/thumbnail5.jpeg" alt="" />
-            </div>
-            <div class="collapse-removeble">
-              <p class="author_title">Taylor Swift</p>
-              <p class="author_sub_title">Artist.Singer</p>
-            </div>
-          </div>
-          <div class="music__box">
-            <div>
-              <img src="images/thumbnail6.jpeg" alt="" />
-            </div>
-            <div class="collapse-removeble">
-              <p class="author_title">Taylor Swift</p>
-              <p class="author_sub_title">Artist.Singer</p>
-            </div>
-          </div>
-          <div class="music__box">
-            <div>
-              <img src="images/thumbnail7.jpeg" alt="" />
-            </div>
-            <div class="collapse-removeble">
-              <p class="author_title">Taylor Swift</p>
-              <p class="author_sub_title">Artist.Singer</p>
-            </div>
-          </div>
-          <div class="music__box">
-            <div>
-              <img src="images/thumbnail7.jpeg" alt="" />
-            </div>
-            <div class="collapse-removeble">
-              <p class="author_title">Taylor Swift</p>
-              <p class="author_sub_title">Artist.Singer</p>
-            </div>
-          </div>
-          <div class="music__box">
-            <div>
-              <img src="images/thumbnail7.jpeg" alt="" />
-            </div>
-            <div class="collapse-removeble">
-              <p class="author_title">Taylor Swift</p>
-              <p class="author_sub_title">Artist.Singer</p>
-            </div>
-          </div>
-          <div class="music__box">
-            <div>
-              <img src="images/thumbnail7.jpeg" alt="" />
-            </div>
-            <div class="collapse-removeble">
-              <p class="author_title">Taylor Swift</p>
-              <p class="author_sub_title">Artist.Singer</p>
-            </div>
-          </div>
-          <div class="music__box">
-            <div>
-              <img src="images/thumbnail7.jpeg" alt="" />
-            </div>
-            <div class="collapse-removeble">
-              <p class="author_title">Taylor Swift</p>
-              <p class="author_sub_title">Artist.Singer</p>
-            </div>
-          </div>
-          <div class="music__box">
-            <div>
-              <img src="images/thumbnail7.jpeg" alt="" />
-            </div>
-            <div class="collapse-removeble">
-              <p class="author_title">Taylor Swift</p>
-              <p class="author_sub_title">Artist.Singer</p>
-            </div>
-          </div>
-          <div class="music__box">
-            <div>
-              <img src="images/thumbnail7.jpeg" alt="" />
-            </div>
-            <div class="collapse-removeble">
-              <p class="author_title">Taylor Swift</p>
-              <p class="author_sub_title">Artist.Singer</p>
-            </div>
-          </div>
-          <div class="music__box">
-            <div>
-              <img src="images/thumbnail7.jpeg" alt="" />
-            </div>
-            <div class="collapse-removeble">
-              <p class="author_title">Taylor Swift</p>
-              <p class="author_sub_title">Artist.Singer</p>
-            </div>
-          </div>
-          <div class="music__box">
-            <div>
-              <img src="images/thumbnail7.jpeg" alt="" />
-            </div>
-            <div class="collapse-removeble">
-              <p class="author_title">Taylor Swift</p>
-              <p class="author_sub_title">Artist.Singer</p>
-            </div>
-          </div>
-          <div class="music__box">
-            <div>
-              <img src="images/thumbnail7.jpeg" alt="" />
-            </div>
-            <div class="collapse-removeble">
-              <p class="author_title">Taylor Swift</p>
-              <p class="author_sub_title">Artist.Singer</p>
-            </div>
+          <div class="collapse-removeble">
+            <p class="author_title">Taylor Swift</p>
+            <p class="author_sub_title">Artist.Singer</p>
           </div>
         </div>
-      </section>
-    </aside>
-    <main>
-      <header>
-        <nav class="top-nav">
-          <div class="arrows">
-            <span class="icon-left"><i class="ri-arrow-left-s-line"></i></span>
-            <span class="icon-right"
-              ><i class="ri-arrow-right-s-line"></i
-            ></span>
+        <div class="music__box">
+          <div>
+            <img src="images/thumbnail2.jpg" alt="" />
           </div>
-          <div class="nav-info">
-            <span class="install-app"
-              ><i class="ri-download-line"></i>Install App</span
-            >
-            <span class="user-profile"><i class="ri-user-line"></i></span>
+          <div class="collapse-removeble">
+            <p class="author_title">Taylor Swift</p>
+            <p class="author_sub_title">Artist.Singer</p>
           </div>
-        </nav>
-        <div class="heading">
-          <h1>Good Morning</h1>
         </div>
-        <div class="playlist-container">
-          <div class="playlist">
-            <img
-              src="https://tse3.mm.bing.net/th?id=OIP.KIRb1icpJNN8DLBWg6hM1gHaHY&pid=Api&P=0&h=180"
-              alt="playlist-img"
-              class="playlist-img"
-            />
-            <h4 class="playlist-title">Liked Songs</h4>
-            <span class="play-icon"><i class="ri-play-fill"></i></span>
+        <div class="music__box">
+          <div>
+            <img src="images/thumbnail3.jpeg" alt="" />
           </div>
-          <div class="playlist">
-            <img
-              src="https://image.freepik.com/free-vector/beautiful-retro-live-music-banner_1419-1988.jpg"
-              alt="playlist-img"
-              class="playlist-img"
-            />
-            <h4 class="playlist-title">Liked Songs</h4>
-            <span class="play-icon"><i class="ri-play-fill"></i></span>
+          <div class="collapse-removeble">
+            <p class="author_title">Taylor Swift</p>
+            <p class="author_sub_title">Artist.Singer</p>
           </div>
-          <div class="playlist">
-            <img
-              src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/new-release-mixtape-music-promo-video-banner-design-template-7518214f05194bed7dd793cc465c2a35_screen.jpg"
-              alt="playlist-img"
-              class="playlist-img"
-            />
-            <h4 class="playlist-title">Liked Songs</h4>
-            <span class="play-icon"><i class="ri-play-fill"></i></span>
+        </div>
+        <div class="music__box">
+          <div>
+            <img src="images/thumbnail4.jpeg" alt="" />
           </div>
-          <div class="playlist">
-            <img
-              src="https://tse3.mm.bing.net/th?id=OIP.KIRb1icpJNN8DLBWg6hM1gHaHY&pid=Api&P=0&h=180"
-              alt="playlist-img"
-              class="playlist-img"
-            />
-            <h4 class="playlist-title">Liked Songs</h4>
-            <span class="play-icon"><i class="ri-play-fill"></i></span>
+          <div class="collapse-removeble">
+            <p class="author_title">Taylor Swift</p>
+            <p class="author_sub_title">Artist.Singer</p>
           </div>
-          <div class="playlist">
-            <img
-              src="https://image.freepik.com/free-vector/beautiful-retro-live-music-banner_1419-1988.jpg"
-              alt="playlist-img"
-              class="playlist-img"
-            />
-            <h4 class="playlist-title">Liked Songs</h4>
-            <span class="play-icon"><i class="ri-play-fill"></i></span>
+        </div>
+        <div class="music__box">
+          <div>
+            <img src="images/thumbnail5.jpeg" alt="" />
           </div>
-          <div class="playlist">
-            <img
-              src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/new-release-mixtape-music-promo-video-banner-design-template-7518214f05194bed7dd793cc465c2a35_screen.jpg"
-              alt="playlist-img"
-              class="playlist-img"
-            />
-            <h4 class="playlist-title">Liked Songs</h4>
+          <div class="collapse-removeble">
+            <p class="author_title">Taylor Swift</p>
+            <p class="author_sub_title">Artist.Singer</p>
+          </div>
+        </div>
+        <div class="music__box">
+          <div>
+            <img src="images/thumbnail6.jpeg" alt="" />
+          </div>
+          <div class="collapse-removeble">
+            <p class="author_title">Taylor Swift</p>
+            <p class="author_sub_title">Artist.Singer</p>
+          </div>
+        </div>
+        <div class="music__box">
+          <div>
+            <img src="images/thumbnail7.jpeg" alt="" />
+          </div>
+          <div class="collapse-removeble">
+            <p class="author_title">Taylor Swift</p>
+            <p class="author_sub_title">Artist.Singer</p>
+          </div>
+        </div>
+        <div class="music__box">
+          <div>
+            <img src="images/thumbnail7.jpeg" alt="" />
+          </div>
+          <div class="collapse-removeble">
+            <p class="author_title">Taylor Swift</p>
+            <p class="author_sub_title">Artist.Singer</p>
+          </div>
+        </div>
+        <div class="music__box">
+          <div>
+            <img src="images/thumbnail7.jpeg" alt="" />
+          </div>
+          <div class="collapse-removeble">
+            <p class="author_title">Taylor Swift</p>
+            <p class="author_sub_title">Artist.Singer</p>
+          </div>
+        </div>
+        <div class="music__box">
+          <div>
+            <img src="images/thumbnail7.jpeg" alt="" />
+          </div>
+          <div class="collapse-removeble">
+            <p class="author_title">Taylor Swift</p>
+            <p class="author_sub_title">Artist.Singer</p>
+          </div>
+        </div>
+        <div class="music__box">
+          <div>
+            <img src="images/thumbnail7.jpeg" alt="" />
+          </div>
+          <div class="collapse-removeble">
+            <p class="author_title">Taylor Swift</p>
+            <p class="author_sub_title">Artist.Singer</p>
+          </div>
+        </div>
+        <div class="music__box">
+          <div>
+            <img src="images/thumbnail7.jpeg" alt="" />
+          </div>
+          <div class="collapse-removeble">
+            <p class="author_title">Taylor Swift</p>
+            <p class="author_sub_title">Artist.Singer</p>
+          </div>
+        </div>
+        <div class="music__box">
+          <div>
+            <img src="images/thumbnail7.jpeg" alt="" />
+          </div>
+          <div class="collapse-removeble">
+            <p class="author_title">Taylor Swift</p>
+            <p class="author_sub_title">Artist.Singer</p>
+          </div>
+        </div>
+        <div class="music__box">
+          <div>
+            <img src="images/thumbnail7.jpeg" alt="" />
+          </div>
+          <div class="collapse-removeble">
+            <p class="author_title">Taylor Swift</p>
+            <p class="author_sub_title">Artist.Singer</p>
+          </div>
+        </div>
+        <div class="music__box">
+          <div>
+            <img src="images/thumbnail7.jpeg" alt="" />
+          </div>
+          <div class="collapse-removeble">
+            <p class="author_title">Taylor Swift</p>
+            <p class="author_sub_title">Artist.Singer</p>
+          </div>
+        </div>
+        <div class="music__box">
+          <div>
+            <img src="images/thumbnail7.jpeg" alt="" />
+          </div>
+          <div class="collapse-removeble">
+            <p class="author_title">Taylor Swift</p>
+            <p class="author_sub_title">Artist.Singer</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </aside>
+  <main id="main-con">
+    <div class="top-div-hidden"></div>
+    <nav id="top-scroll"  class="top-nav">
+      <div class="main-logo">
+          <img src="images/music.png" alt="logo">
+          <h1 class="logo-title">Musify</h1>
+      </div>
+      <div class="nav-info">
+        <span class="icon-left"><i class="ri-arrow-left-s-line"></i></span>
+        <span class="install-app"><i class="ri-download-line"></i>Install App</span>
+        <span class="user-profile"><i class="ri-user-line"></i></span>
+      </div>
+    </nav>
+    <header>
+      <div class="heading">
+        <h1>Good Morning</h1>
+      </div>
+      <div class="playlist-container">
+        <div class="playlist">
+          <img src="https://tse3.mm.bing.net/th?id=OIP.KIRb1icpJNN8DLBWg6hM1gHaHY&pid=Api&P=0&h=180" alt="playlist-img"
+            class="playlist-img" />
+          <h4 class="playlist-title">Liked Songs</h4>
+          <span class="play-icon"><i class="ri-play-fill"></i></span>
+        </div>
+        <div class="playlist">
+          <img src="https://image.freepik.com/free-vector/beautiful-retro-live-music-banner_1419-1988.jpg"
+            alt="playlist-img" class="playlist-img" />
+          <h4 class="playlist-title">Liked Songs</h4>
+          <span class="play-icon"><i class="ri-play-fill"></i></span>
+        </div>
+        <div class="playlist">
+          <img
+            src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/new-release-mixtape-music-promo-video-banner-design-template-7518214f05194bed7dd793cc465c2a35_screen.jpg"
+            alt="playlist-img" class="playlist-img" />
+          <h4 class="playlist-title">Liked Songs</h4>
+          <span class="play-icon"><i class="ri-play-fill"></i></span>
+        </div>
+        <div class="playlist">
+          <img src="https://tse3.mm.bing.net/th?id=OIP.KIRb1icpJNN8DLBWg6hM1gHaHY&pid=Api&P=0&h=180" alt="playlist-img"
+            class="playlist-img" />
+          <h4 class="playlist-title">Liked Songs</h4>
+          <span class="play-icon"><i class="ri-play-fill"></i></span>
+        </div>
+        <div class="playlist">
+          <img src="https://image.freepik.com/free-vector/beautiful-retro-live-music-banner_1419-1988.jpg"
+            alt="playlist-img" class="playlist-img" />
+          <h4 class="playlist-title">Liked Songs</h4>
+          <span class="play-icon"><i class="ri-play-fill"></i></span>
+        </div>
+        <div class="playlist">
+          <img
+            src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/new-release-mixtape-music-promo-video-banner-design-template-7518214f05194bed7dd793cc465c2a35_screen.jpg"
+            alt="playlist-img" class="playlist-img" />
+          <h4 class="playlist-title">Liked Songs</h4>
+          <span class="play-icon"><i class="ri-play-fill"></i></span>
+        </div>
+      </div>
+    </header>
+    <section class="container">
+      <div class="box-heading">
+        <h2>Made for Rutik Kapare</h2>
+        <button class="show-more">Show More</button>
+      </div>
+      <div class="grid">
+        <div class="box-container">
+          <div class="box-item">
+            <img src="img/avatar-1.jpg" alt="" class="box-image" />
+            <h3 class="box-title">Daily Mix 1</h3>
+            <h4>Pritam sharma,Lata mangeshakar</h4>
             <span class="play-icon"><i class="ri-play-fill"></i></span>
           </div>
         </div>
-      </header>
-      <section class="container">
-        <div class="box-heading">
-          <h2>Made for Rutik Kapare</h2>
-          <button class="show-more">Show More</button>
-        </div>
-        <div class="grid">
-          <div class="box-container">
-            <div class="box-item">
-              <img src="img/avatar-1.jpg" alt="" class="box-image" />
-              <h3 class="box-title">Daily Mix 1</h3>
-              <h4>Pritam sharma,Lata mangeshakar</h4>
-              <span class="play-icon"><i class="ri-play-fill"></i></span>
-            </div>
-          </div>
-          <div class="box-container">
-            <div class="box-item">
-              <img src="img/avatar-1.jpg" alt="" class="box-image" />
-              <h3 class="box-title">Daily Mix 1</h3>
-              <h4>Pritam sharma,Lata mangeshakar</h4>
-              <span class="play-icon"><i class="ri-play-fill"></i></span>
-            </div>
-          </div>
-          <div class="box-container">
-            <div class="box-item">
-              <img src="img/avatar-1.jpg" alt="" class="box-image" />
-              <h3 class="box-title">Daily Mix 1</h3>
-              <h4>Pritam sharma,Lata mangeshakar</h4>
-              <span class="play-icon"><i class="ri-play-fill"></i></span>
-            </div>
-          </div>
-          <div class="box-container">
-            <div class="box-item">
-              <img src="img/avatar-1.jpg" alt="" class="box-image" />
-              <h3 class="box-title">Daily Mix 1</h3>
-              <h4>Pritam sharma,Lata mangeshakar</h4>
-
-              <span class="play-icon"><i class="ri-play-fill"></i></span>
-            </div>
-          </div>
-          <div class="box-container">
-            <div class="box-item">
-              <img src="img/avatar-1.jpg" alt="" class="box-image" />
-              <h3 class="box-title">Daily Mix 1</h3>
-              <h4>Pritam sharma,Lata mangeshakar</h4>
-
-              <span class="play-icon"><i class="ri-play-fill"></i></span>
-            </div>
-          </div>
-          <div class="box-container">
-            <div class="box-item">
-              <img src="img/avatar-1.jpg" alt="" class="box-image" />
-              <h3 class="box-title">Daily Mix 1</h3>
-              <h4>Pritam sharma,Lata mangeshakar</h4>
-
-              <span class="play-icon"><i class="ri-play-fill"></i></span>
-            </div>
-          </div>
-          <div class="box-container">
-            <div class="box-item">
-              <img src="img/avatar-1.jpg" alt="" class="box-image" />
-              <h3 class="box-title">Daily Mix 1</h3>
-              <h4>Pritam sharma,Lata mangeshakar</h4>
-
-              <span class="play-icon"><i class="ri-play-fill"></i></span>
-            </div>
-          </div>
-          <div class="box-container">
-            <div class="box-item">
-              <img src="img/avatar-1.jpg" alt="" class="box-image" />
-              <h3 class="box-title">Daily Mix 1</h3>
-              <h4>Pritam sharma,Lata mangeshakar</h4>
-
-              <span class="play-icon"><i class="ri-play-fill"></i></span>
-            </div>
+        <div class="box-container">
+          <div class="box-item">
+            <img src="img/avatar-1.jpg" alt="" class="box-image" />
+            <h3 class="box-title">Daily Mix 1</h3>
+            <h4>Pritam sharma,Lata mangeshakar</h4>
+            <span class="play-icon"><i class="ri-play-fill"></i></span>
           </div>
         </div>
+        <div class="box-container">
+          <div class="box-item">
+            <img src="img/avatar-1.jpg" alt="" class="box-image" />
+            <h3 class="box-title">Daily Mix 1</h3>
+            <h4>Pritam sharma,Lata mangeshakar</h4>
+            <span class="play-icon"><i class="ri-play-fill"></i></span>
+          </div>
+        </div>
+        <div class="box-container">
+          <div class="box-item">
+            <img src="img/avatar-1.jpg" alt="" class="box-image" />
+            <h3 class="box-title">Daily Mix 1</h3>
+            <h4>Pritam sharma,Lata mangeshakar</h4>
 
-        <div class="box-heading">
-          <h2>Made for Ranjit Bobade</h2>
-          <button class="show-more">Show More</button>
-        </div>
-        <div class="grid">
-          <div class="box-container">
-            <div class="box-item">
-              <img src="img/avatar-1.jpg" alt="" class="box-image" />
-              <h3 class="box-title">Daily Mix 1</h3>
-              <h4>Pritam sharma,Lata mangeshakar</h4>
-              <span class="play-icon"><i class="ri-play-fill"></i></span>
-            </div>
-          </div>
-          <div class="box-container">
-            <div class="box-item">
-              <img src="img/avatar-1.jpg" alt="" class="box-image" />
-              <h3 class="box-title">Daily Mix 1</h3>
-              <h4>Pritam sharma,Lata mangeshakar</h4>
-              <span class="play-icon"><i class="ri-play-fill"></i></span>
-            </div>
-          </div>
-          <div class="box-container">
-            <div class="box-item">
-              <img src="img/avatar-1.jpg" alt="" class="box-image" />
-              <h3 class="box-title">Daily Mix 1</h3>
-              <h4>Pritam sharma,Lata mangeshakar</h4>
-              <span class="play-icon"><i class="ri-play-fill"></i></span>
-            </div>
-          </div>
-          <div class="box-container">
-            <div class="box-item">
-              <img src="img/avatar-1.jpg" alt="" class="box-image" />
-              <h3 class="box-title">Daily Mix 1</h3>
-              <h4>Pritam sharma,Lata mangeshakar</h4>
-              <span class="play-icon"><i class="ri-play-fill"></i></span>
-            </div>
-          </div>
-          <div class="box-container">
-            <div class="box-item">
-              <img src="img/avatar-1.jpg" alt="" class="box-image" />
-              <h3 class="box-title">Daily Mix 1</h3>
-              <h4>Pritam sharma,Lata mangeshakar</h4>
-              <span class="play-icon"><i class="ri-play-fill"></i></span>
-            </div>
-          </div>
-          <div class="box-container">
-            <div class="box-item">
-              <img src="img/avatar-1.jpg" alt="" class="box-image" />
-              <h3 class="box-title">Daily Mix 1</h3>
-              <h4>Pritam sharma,Lata mangeshakar</h4>
-              <span class="play-icon"><i class="ri-play-fill"></i></span>
-            </div>
-          </div>
-          <div class="box-container">
-            <div class="box-item">
-              <img src="img/avatar-1.jpg" alt="" class="box-image" />
-              <h3 class="box-title">Daily Mix 1</h3>
-              <h4>Pritam sharma,Lata mangeshakar</h4>
-              <span class="play-icon"><i class="ri-play-fill"></i></span>
-            </div>
-          </div>
-          <div class="box-container">
-            <div class="box-item">
-              <img src="img/avatar-1.jpg" alt="" class="box-image" />
-              <h3 class="box-title">Daily Mix 1</h3>
-              <h4>Pritam sharma,Lata mangeshakar</h4>
-              <span class="play-icon"><i class="ri-play-fill"></i></span>
-            </div>
+            <span class="play-icon"><i class="ri-play-fill"></i></span>
           </div>
         </div>
-      </section>
-    </main>
-  </body>
-  <script src="script.js"></script>
+        <div class="box-container">
+          <div class="box-item">
+            <img src="img/avatar-1.jpg" alt="" class="box-image" />
+            <h3 class="box-title">Daily Mix 1</h3>
+            <h4>Pritam sharma,Lata mangeshakar</h4>
+
+            <span class="play-icon"><i class="ri-play-fill"></i></span>
+          </div>
+        </div>
+        <div class="box-container">
+          <div class="box-item">
+            <img src="img/avatar-1.jpg" alt="" class="box-image" />
+            <h3 class="box-title">Daily Mix 1</h3>
+            <h4>Pritam sharma,Lata mangeshakar</h4>
+
+            <span class="play-icon"><i class="ri-play-fill"></i></span>
+          </div>
+        </div>
+        <div class="box-container">
+          <div class="box-item">
+            <img src="img/avatar-1.jpg" alt="" class="box-image" />
+            <h3 class="box-title">Daily Mix 1</h3>
+            <h4>Pritam sharma,Lata mangeshakar</h4>
+
+            <span class="play-icon"><i class="ri-play-fill"></i></span>
+          </div>
+        </div>
+        <div class="box-container">
+          <div class="box-item">
+            <img src="img/avatar-1.jpg" alt="" class="box-image" />
+            <h3 class="box-title">Daily Mix 1</h3>
+            <h4>Pritam sharma,Lata mangeshakar</h4>
+
+            <span class="play-icon"><i class="ri-play-fill"></i></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="box-heading">
+        <h2>Made for Ranjit Bobade</h2>
+        <button class="show-more">Show More</button>
+      </div>
+      <div class="grid">
+        <div class="box-container">
+          <div class="box-item">
+            <img src="img/avatar-1.jpg" alt="" class="box-image" />
+            <h3 class="box-title">Daily Mix 1</h3>
+            <h4>Pritam sharma,Lata mangeshakar</h4>
+            <span class="play-icon"><i class="ri-play-fill"></i></span>
+          </div>
+        </div>
+        <div class="box-container">
+          <div class="box-item">
+            <img src="img/avatar-1.jpg" alt="" class="box-image" />
+            <h3 class="box-title">Daily Mix 1</h3>
+            <h4>Pritam sharma,Lata mangeshakar</h4>
+            <span class="play-icon"><i class="ri-play-fill"></i></span>
+          </div>
+        </div>
+        <div class="box-container">
+          <div class="box-item">
+            <img src="img/avatar-1.jpg" alt="" class="box-image" />
+            <h3 class="box-title">Daily Mix 1</h3>
+            <h4>Pritam sharma,Lata mangeshakar</h4>
+            <span class="play-icon"><i class="ri-play-fill"></i></span>
+          </div>
+        </div>
+        <div class="box-container">
+          <div class="box-item">
+            <img src="img/avatar-1.jpg" alt="" class="box-image" />
+            <h3 class="box-title">Daily Mix 1</h3>
+            <h4>Pritam sharma,Lata mangeshakar</h4>
+            <span class="play-icon"><i class="ri-play-fill"></i></span>
+          </div>
+        </div>
+        <div class="box-container">
+          <div class="box-item">
+            <img src="img/avatar-1.jpg" alt="" class="box-image" />
+            <h3 class="box-title">Daily Mix 1</h3>
+            <h4>Pritam sharma,Lata mangeshakar</h4>
+            <span class="play-icon"><i class="ri-play-fill"></i></span>
+          </div>
+        </div>
+        <div class="box-container">
+          <div class="box-item">
+            <img src="img/avatar-1.jpg" alt="" class="box-image" />
+            <h3 class="box-title">Daily Mix 1</h3>
+            <h4>Pritam sharma,Lata mangeshakar</h4>
+            <span class="play-icon"><i class="ri-play-fill"></i></span>
+          </div>
+        </div>
+        <div class="box-container">
+          <div class="box-item">
+            <img src="img/avatar-1.jpg" alt="" class="box-image" />
+            <h3 class="box-title">Daily Mix 1</h3>
+            <h4>Pritam sharma,Lata mangeshakar</h4>
+            <span class="play-icon"><i class="ri-play-fill"></i></span>
+          </div>
+        </div>
+        <div class="box-container">
+          <div class="box-item">
+            <img src="img/avatar-1.jpg" alt="" class="box-image" />
+            <h3 class="box-title">Daily Mix 1</h3>
+            <h4>Pritam sharma,Lata mangeshakar</h4>
+            <span class="play-icon"><i class="ri-play-fill"></i></span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+<script src="script.js"></script>
 </html>
