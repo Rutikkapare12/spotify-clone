@@ -33,6 +33,10 @@ header{
     align-items: center;
 }
 
+.top-nav .arrows .icon-right{
+    margin-right: 10px;
+}
+
  .top-nav .arrows .nav-playlist-title{
     display: flex;
     align-items: center;
