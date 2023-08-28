@@ -10,8 +10,9 @@ font-family: 'Roboto', sans-serif; */
 
 :root {
   /* Hex	 */
-  --main-green: #1db954;
-  --main-green: rgb(9, 213, 84);
+  /* --main-green: #1db954; */
+  /* --main-green: rgb(9, 213, 84); */
+  --main-green: linear-gradient(to top left, #d10edb, #0061ff);
   --background: #212121;
   --border: #121212;
   --light-background: #535353;
@@ -35,6 +36,7 @@ font-family: 'Roboto', sans-serif; */
 }
 
 body {
+  overflow: hidden;
   display: grid;
   grid-template-columns: 25% 73.77%;
   gap: 10px;
@@ -194,7 +196,8 @@ main > header {
 header {
   background: linear-gradient(to bottom, rgb(67, 2, 67), var(--background));
   color: var(--font-color);
-  border-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
   padding-block: 10px;
 }
 
@@ -208,7 +211,7 @@ header {
 
 .top-nav {
   color: var(--font-color);
-  padding: 1rem;
+  padding: 0.4rem .5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -218,12 +221,33 @@ header {
   z-index: 100;
   background: rgb(67, 2, 67);
   backdrop-filter: blur(5px);
-  margin-top: 10px;
+  margin-top: 0;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  backdrop-filter: blur(7px);
 }
 
- .top-nav .arrows span {
+.top-nav .main-logo{
+  display: flex;
+  align-items: center;
+}
+
+.top-nav .main-logo .logo-title{
+  font-weight: 900;
+  text-shadow: 0 0 15px rgba(0,0,0,.9);
+}
+
+.top-nav .main-logo img{
+  width: 50px;
+  margin: 0 5px 0 0;
+  filter: drop-shadow(0 0 15px rgba(0,0,0,.9))
+}
+
+.top-nav .nav-info{
+  display: flex;
+}
+
+.top-nav .nav-info .icon-left {
   font-size: 25px;
   display: inline-flex;
   justify-content: center;
@@ -233,6 +257,7 @@ header {
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.3);
   color: rgba(255, 255, 255, 0.7);
+  margin-right: 7px;
 }
 
  .top-nav .arrows .icon-left {
@@ -262,7 +287,7 @@ header {
   margin-left: 7px;
 }
 
-h.heading h1 {
+.heading h1 {
   padding: 0.2rem 1rem 0.4rem 1rem;
 }
 
@@ -298,7 +323,7 @@ h.heading h1 {
   right: 1.1rem;
   align-items: center;
   border-radius: 50%;
-  background-color: var(--main-green);
+  background: var(--main-green);
   height: 50px;
   width: 50px;
   display: flex;
@@ -417,7 +442,7 @@ header .playlist-container .playlist:hover > .play-icon {
   right: 1rem;
   height: 50px;
   width: 50px;
-  background-color: var(--main-green);
+  background: var(--main-green);
   border-radius: 50%;
   color: black;
   align-items: center;
