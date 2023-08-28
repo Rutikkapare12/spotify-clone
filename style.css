@@ -1,0 +1,539 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Roboto:wght@300;400;500&display=swap");
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Hex	 */
+  --main-green: #1db954;
+  --main-green: rgb(9, 213, 84);
+  --background: #212121;
+  --border: #121212;
+  --light-background: #535353;
+  --grey: #b3b3b3;
+  --font-color: #f1f1f1;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  height: 2px;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgb(114, 113, 113);
+  border-radius: 10px;
+  height: 200px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 25% 73.77%;
+  gap: 10px;
+  height: 100vh;
+  background: var(--border);
+  font-family: "Poppins", sans-serif;
+}
+
+i {
+  cursor: pointer;
+}
+/* -------------------------------------------------------------------------- */
+/*                                Aside section                               */
+/* -------------------------------------------------------------------------- */
+aside {
+  position: sticky;
+  background-color: var(--border);
+  grid-row-start: 1;
+  grid-row-end: 3;
+  gap: 10px;
+  width: 100%;
+}
+aside nav {
+  margin-block: 10px;
+  margin-left: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: var(--background);
+}
+aside nav div {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: var(--font-color);
+  cursor: pointer;
+}
+aside nav div i {
+  font-size: 1.8rem;
+  margin-right: 17px;
+}
+aside nav div h2 {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+aside nav div:hover {
+  opacity: 0.8;
+}
+/* ------------------------- aside section container ------------------------ */
+aside .list {
+  background: var(--background);
+  margin-left: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  color: var(--font-color);
+}
+aside .list .list__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  margin-bottom: 5px;
+}
+aside .list .list__top .list__top__left {
+  display: flex;
+  align-items: center;
+}
+aside .list .list__top .list__top__left > i {
+  font-size: 1.8rem;
+  margin-right: 17px;
+}
+aside .list .list__top .list__top__left > h2 {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+aside .list .list__top .list__top__right > i {
+  font-size: 1.5rem;
+}
+aside .list .list__top .list__top__right > i:first-child {
+  margin-right: 5px;
+}
+aside .list .category-btn {
+  display: flex;
+  justify-content: space-around;
+  margin-inline: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+aside .list .category-btn button {
+  padding: 8px 10px;
+  border-radius: 20px;
+  background: var(--light-background);
+  color: var(--font-color);
+  font-size: 0.9rem;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  min-width: fit-content;
+  min-height: fit-content;
+  margin-right: 10px;
+}
+aside .list .recent-btn {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+aside .list .recent-btn i {
+  font-size: 1.3rem;
+}
+aside .list .recent-btn button {
+  font-size: 1rem;
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--font-color);
+}
+aside .list .music__lists {
+  display: grid;
+  gap: 10px;
+  height: 65vh;
+  overflow: auto;
+}
+aside .list .music__box {
+  margin-inline: 10px;
+  display: flex;
+  gap: 17px;
+}
+aside .list .music__box div > img {
+  height: 3.3rem;
+  width: 3.3rem;
+  border-radius: 10px;
+}
+aside .list .music__box div > .author_title {
+  font-weight: 500;
+}
+aside .list .music__box div > .author_sub_title {
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
+
+main {
+  position: sticky;
+  background-color: var(--border);
+  gap: 10px;
+  height: 100vh;
+  overflow: auto;
+}
+main > header {
+  width: 100%;
+  height: auto;
+  background-color: violet;
+}
+
+/* ==================== Headder CSS ===================== */
+
+header {
+  background: linear-gradient(to bottom, rgb(67, 2, 67), var(--background));
+  color: var(--font-color);
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  padding-block: 10px;
+}
+
+header .top-nav {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  position: sticky;
+  top: 0px;
+  z-index: 100;
+  background: transparent;
+  backdrop-filter: blur(5px);
+}
+
+header .top-nav .arrows span {
+  font-size: 25px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+header .top-nav .arrows .icon-left {
+  margin-right: 10px;
+}
+
+header .top-nav .install-app {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 7px 10px;
+  border-radius: 35px;
+  display: inline-flex;
+  align-items: center;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+header .top-nav .install-app i {
+  margin-right: 7px;
+}
+
+header .top-nav .user-profile {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 7px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  margin-left: 7px;
+}
+
+header .heading h1 {
+  padding: 0.2rem 1rem 0.4rem 1rem;
+}
+
+header .playlist-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+  margin-inline: 10px;
+}
+
+header .playlist-container .playlist {
+  background-color: rgba(255, 255, 255, 0.07);
+  display: flex;
+  border-radius: 4px;
+  overflow: hidden;
+  text-align: center;
+  align-items: center;
+  transition: all 0.2s;
+  position: relative;
+}
+
+header .playlist-container .playlist img {
+  height: 100%;
+  width: 80px;
+}
+
+header .playlist-container h4 {
+  margin-left: 1rem;
+}
+
+header .playlist-container .playlist .play-icon {
+  position: absolute;
+  right: 1.1rem;
+  align-items: center;
+  border-radius: 50%;
+  background-color: var(--main-green);
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  color: black;
+  visibility: hidden;
+  box-shadow: 0 4px 10px 4px rgba(0, 0, 0, 0.3);
+}
+
+header .playlist-container .playlist .play-icon i {
+  font-size: 30px;
+  justify-self: center;
+}
+
+/* hover */
+header .nav-info span:hover {
+  transform: scale(1.02);
+  cursor: pointer;
+}
+header .playlist-container .playlist:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+header .playlist-container .playlist .play-icon:hover {
+  filter: brightness(1.04);
+  transform: scale(1.01);
+}
+header .playlist-container .playlist:hover > .play-icon {
+  visibility: visible;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                              container section                             */
+/* -------------------------------------------------------------------------- */
+
+/* section box */
+.container {
+  background-color: var(--background);
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.box-heading {
+  color: #f1f1f1;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-inline: 10px;
+}
+
+.box-heading h2 {
+  margin: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  justify-content: space-around;
+  margin-inline: 20px;
+  gap: 16px;
+  height: 260px;
+  overflow: hidden;
+}
+
+.show-more {
+  font-size: 1rem;
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--font-color);
+  text-decoration: none;
+  margin: 10px;
+}
+.show-more:hover {
+  text-decoration: underline;
+}
+
+.box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.03);
+  border-radius: 10px;
+  position: relative;
+}
+.box-container:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  cursor: pointer;
+}
+
+.box-item img {
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: none;
+}
+
+.box-title {
+  color: var(--font-color);
+  line-height: 30px;
+  font-size: 1.1rem;
+}
+
+.box-item h4 {
+  color: var(--light-background);
+  font-size: 0.89rem;
+}
+
+.container .box-container .play-icon {
+  position: absolute;
+  top: 7rem;
+  right: 1rem;
+  height: 50px;
+  width: 50px;
+  background-color: var(--main-green);
+  border-radius: 50%;
+  color: black;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  visibility: hidden;
+}
+
+.container .box-container .play-icon i {
+  font-size: 25px;
+}
+
+.box-item:hover > .play-icon {
+  visibility: visible;
+  cursor: pointer;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                         responsive required classes                        */
+/* -------------------------------------------------------------------------- */
+.collapse {
+  display: none !important;
+}
+.minimize-body {
+  grid-template-columns: 5.22% auto;
+}
+.musiclists__height {
+  max-height: 76%;
+}
+.collapsible {
+  height: auto;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                           Media Queries for 600px                          */
+/* -------------------------------------------------------------------------- */
+@media screen and (max-width: 600px) {
+  aside {
+    display: none;
+  }
+  body {
+    grid-template-columns: 1fr;
+  }
+  main {
+    padding-inline: 10px;
+  }
+  header .playlist-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+
+  header .playlist-container .playlist img {
+    height: 100%;
+    width: 60px;
+  }
+
+  header .playlist-container h4 {
+    font-size: 0.9rem;
+    margin-left: 0.6rem;
+    text-align: start;
+  }
+
+
+  header .playlist-container .playlist .play-icon {
+    position: absolute;
+    left: 2.1rem;
+    top: 2.1rem;
+    height: 25px;
+    width: 25px;
+  }
+  
+  header .playlist-container .playlist .play-icon i {
+    font-size: 16px;
+  }
+
+  .box-heading {
+    margin-bottom: 10px;
+    padding-inline: 10px;
+  }
+
+  .box-heading h2 {
+    margin: 10px;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+    grid-auto-flow: column;
+    justify-content: space-between;
+    margin-inline: 20px;
+    gap: 5px;
+    height: auto;
+    overflow: auto;
+  }
+
+  .grid .box-container {
+    border-radius: 5px;
+    width: 10rem;
+    position: relative;
+  }
+
+  .box-item img {
+    height: 150px;
+    width: 100%;
+    padding: 0;
+    border-radius: 2px;
+    object-fit: cover;
+  }
+
+  .container .box-container .play-icon {
+    top: 7rem;
+    height: 45px;
+    width: 45px;
+  }
+
+  .container .box-container .play-icon i {
+    font-size: 20px;
+  }
+
+  .show-more {
+    display: none;
+  }
+}
+/* -------------------------------------------------------------------------- */
+/*                           Media Queries for 900px                          */
+/* -------------------------------------------------------------------------- */
+@media screen and (max-width: 900px) {
+}
